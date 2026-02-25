@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELIRIUM Estilistas | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="DELIRIUM Estilistas" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <span class="logo-text" style="display:none;">DELIRIUM</span>
+            </a>
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="aparal.html" class="nav-link">Aparal</a></li>
+                    <li><a href="kidzone.html" class="nav-link">Kidzone</a></li>
+                    <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80" alt="Estilista trabajando">
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-content">
+                    <h1 class="hero-title">Transforma tu estilo</h1>
+                    <p class="hero-subtitle">Reserva tu cita hoy</p>
+                    
+                    <!-- Booking Form -->
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contacto">WhatsApp</label>
+                            <input type="tel" id="contacto" name="contacto" required placeholder="+51 999 999 999">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fecha">Día de la cita</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>¿Viene con niños?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="ninos" value="no" checked>
+                                    <span>No</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="ninos" value="si">
+                                    <span>Sí</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="servicio">Elegir servicio</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="">Selecciona un servicio</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Reservar cita</button>
+                    </form>
+                    
+                    <p class="form-note">Una vez que se envía el formulario, te contactaremos por medio de WhatsApp a la brevedad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Experiencia Premium</h3>
+                        <p>Servicios de alta calidad con profesionales especializados</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3>A tu tiempo</h3>
+                        <p>Reserva flexible adaptada a tu agenda</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3>Cuidado integral</h3>
+                        <p>Productos premium para tu cabello</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/isotipo.png" alt="DELIRIUM" class="footer-logo" onerror="this.style.display='none'">
+                    <span class="footer-brand-text">DELIRIUM</span>
+                </div>
+                <p class="footer-copy">© 2026 DELIRIUM Estilistas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
