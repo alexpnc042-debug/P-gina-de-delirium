@@ -113,6 +113,13 @@ p {
     width: auto;
 }
 
+.logo-fallback{
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+/* Si ya no vas a usar texto, podés borrar esto o dejarlo */
 .logo-text {
     font-family: var(--font-headline);
     font-size: 1.5rem;
